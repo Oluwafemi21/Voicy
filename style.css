@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
 :root{
     --navbg:#FBE4CF;
     --pink:#EC1CA7;
@@ -16,8 +16,12 @@ body{
     color: var(--purple);
 }
 
+a{
+    text-decoration: none;
+    font-weight: 600;
+}
+
 header{
-    height: 60px;
     background-color: var(--navbg);
 }
 
@@ -27,7 +31,7 @@ nav{
     align-items: center;
     width: 80%;
     margin: 0 auto; 
-    padding: 10px 0 ;
+    padding: 13px 0 ;
 }
 
 .nav-menu{
@@ -37,12 +41,68 @@ nav{
     gap:40px;
 }
 
-a{
-    text-decoration: none;
-    font-weight: 600;
-}
-
 .nav-menu .active{
     color: var(--pink);
-  
 }
+
+.nav-menu a:hover{
+    color: var(--pink);
+}
+
+/* Power Fetaures */
+.power_features{
+    background-color: var(--purple);
+    color: white;
+    text-align: center;
+    padding:100px 40px;
+}
+
+.power_header{
+    text-align: center;
+    line-height: 20px;
+}
+.power_header h2{
+    font-size: 30px;
+}
+.power_header p{
+    max-width: 500px;
+    margin:20px auto;
+}
+.power_cards{
+    padding-top: 40px;
+}
+
+.card_container{
+    width: 75%;
+    margin: 0 auto;
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(3,1fr);
+    gap:30px;
+    grid-template-rows: 2;
+}
+
+.card{
+    background-color: white;
+    border-radius: 9px;
+    padding: 40px 20px;
+    text-align: left;
+}
+
+.card img{
+    height: 35px;
+}
+
+.card h4{
+    color: var(--purple);
+    font-weight: 700;
+    padding: 15px 0;
+    font-size: 18px;
+}
+
+.card p{
+    color: black;
+    padding: 10px 0;
+    font-weight: bold;
+}
+
