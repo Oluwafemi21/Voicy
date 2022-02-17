@@ -57,14 +57,14 @@ nav{
     padding:100px 40px;
 }
 
-.power_header{
+.section_header{
     text-align: center;
     line-height: 20px;
 }
-.power_header h2{
+.section_header h2{
     font-size: 30px;
 }
-.power_header p{
+.section_header p{
     max-width: 500px;
     margin:20px auto;
 }
@@ -106,3 +106,34 @@ nav{
     font-weight: bold;
 }
 
+/* Feedback */
+.feedback{
+    padding:100px 0;
+}
+
+.feedback .section_header p {
+    color: grey;
+    max-width: 330px;
+}
+
+.feeback_container{
+    display: flex;
+    overflow: auto;
+}
+
+.feedback_card{
+    padding: 25px 30px;
+    border: 2px solid ;
+    width: 400px;
+}
+
+.card_header{
+    display: flex;
+}
+
+.card-img{
+    height: 50px;
+    width: 50px;
+    background-color: darkslategray;
+    border-radius: 50%;
+}
