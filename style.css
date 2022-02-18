@@ -14,6 +14,7 @@
 body{
     font-family: 'Nunito', sans-serif;
     color: var(--purple);
+    width: 100%;
 }
 
 a{
@@ -84,7 +85,7 @@ nav{
 
 .card{
     background-color: white;
-    border-radius: 9px;
+    border-radius: 10px;
     padding: 40px 20px;
     text-align: left;
 }
@@ -101,7 +102,7 @@ nav{
 }
 
 .card p{
-    color: black;
+    color:#08090A;
     padding: 10px 0;
     font-weight: bold;
 }
@@ -109,26 +110,33 @@ nav{
 /* Feedback */
 .feedback{
     padding:100px 0;
+    position: relative;
 }
 
 .feedback .section_header p {
-    color: grey;
+    color: #4F5665;
     max-width: 330px;
 }
 
 .feeback_container{
     display: flex;
-    overflow: auto;
+    overflow-x:scroll;
+    gap: 40px;
+    width: 100%;
+    margin-bottom: 80px;
 }
 
 .feedback_card{
-    padding: 25px 30px;
+    padding: 25px 20px;
     border: 2px solid ;
     width: 400px;
+    border-radius: 10px;
 }
 
 .card_header{
     display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 .card-img{
@@ -136,4 +144,127 @@ nav{
     width: 50px;
     background-color: darkslategray;
     border-radius: 50%;
+}
+
+.user_details .name{
+    color: var(--pink);
+    font-size: 20px;
+}
+
+.user_details .location{
+    font-weight: 400;
+}
+
+.card_content{
+    color: #0B132A;
+    padding-top: 15px;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+.overflow-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 10px rgba(0,0,0,0.2);
+    padding: 53px 70px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.overflow-section button{
+    padding:15px 30px;
+    font-weight: 700;
+    width: 250px;
+    border-radius:10px;
+    border: none;
+    font-size: 18px;
+    color:white;
+    background-color:var(--pink);
+    box-shadow: 0 8px 10px  rgba(95, 122, 126, 0.22);
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.overflow-section button:hover{
+    border: 2px solid var(--pink);
+    padding: 13px 28px;
+    color: var(--pink);
+    background-color: white;
+}
+
+.overflow-details{
+    padding: 0 62px;
+}
+
+.overflow-details h2{
+    padding-bottom: 15px;
+}
+
+.overflow-details p{
+    color:#4F5665;
+} 
+
+footer{
+    background-color: var(--purple);
+    color: white;
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding:225px 150px 80px;
+    z-index: -1;
+}
+
+.grid-item p{
+ padding: 18px 0 30px;
+ max-width:400px;
+}
+
+.grid-item .sm-icons{
+    padding: 5px 0;
+}
+
+.grid-item-2{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.grid-item-2 h3{
+    font-size: 24px;
+    padding-bottom: 5px;
+}
+
+.grid-item-2 div{
+    padding: 10px 0;
+}
+
+.grid-item-2 a{
+    color: white;
+}
+
+.grid-item-2 a:hover{
+    color: var(--pink);
+}
+
+.sm-icons{
+   display: flex;
+   align-items: center;
+   gap:20px;
+}
+
+.icon{
+    display: block;
+    background-color: white;
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
